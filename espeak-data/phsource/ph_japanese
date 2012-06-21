@@ -1,0 +1,83 @@
+phoneme a
+  ipa ä
+  vowel starttype #a endtype #a
+  length 200
+  FMT(vowel/a)
+endphoneme
+
+phoneme i
+  ipa i
+  vowel starttype #i endtype #i
+  length 200
+  FMT(vowel/i_fnt)
+endphoneme
+
+phoneme u
+  ipa ɯᵝ
+  vowel starttype #u endtype #u
+  length 200
+  FMT(vowel/uu_bck)
+endphoneme
+
+phoneme e
+  ipa e̞
+  vowel starttype #e endtype #e
+  length 200
+  FMT(vowel/e_8)
+endphoneme
+
+phoneme o
+  ipa o̞
+  vowel starttype #o endtype #o
+  length 200
+  FMT(vowel/oo_3)
+endphoneme
+
+phoneme f // as in フ
+  ipa ɸ
+  // TODO
+  CALL zh/f
+endphoneme
+
+phoneme n"
+  // uvular nasal
+  ipa ɴ
+  // TODO
+  CALL en/n
+endphoneme
+
+phoneme N // ん
+  IF nextPhW(isVelar) THEN
+    ChangePhoneme(N)
+  ELIF nextPhW(n) OR nextPhW(d) OR nextPhW(t) OR nextPhW(r) THEN
+    ChangePhoneme(n)
+  ELIF nextPhW(p) OR nextPhW(b) OR nextPhW(m) THEN
+    ChangePhoneme(m)
+  ELIF nextPhW(isVowel) OR nextPhW(j) OR nextPhW(w) OR nextPhW(s) OR nextPhW(z) OR nextPhW(h) THEN
+    length 190
+    IF prevPhW(a) THEN
+      ipa ã
+      vowel starttype #a endtype #a
+      FMT(vnasal/W_n)
+    ELIF prevPhW(i) THEN
+      ipa ĩ
+      vowel starttype #i endtype #i
+      FMT(vnasal/i_n2)
+    ELIF prevPhW(u) THEN
+      ipa ũ
+      vowel starttype #u endtype #u
+      FMT(vnasal/u_n)
+    ELIF prevPhW(e) THEN
+      ipa ẽ
+      vowel starttype #e endtype #e
+      FMT(vnasal/e_n)
+    ELIF prevPhW(o) THEN
+      ipa õ
+      vowel starttype #o endtype #o
+      FMT(vnasal/o_n4)
+    ENDIF
+  ELSE
+    ChangePhoneme(n")
+  ENDIF
+endphoneme
+

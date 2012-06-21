@@ -1,0 +1,409 @@
+// This file is UTF8 encoded
+
+.L01 ア カ ガ サ ザ タ ダ ナ ハ バ パ マ ヤ ラ ワ ァ ャ
+.L02 イ キ ギ シ ジ チ ジ ニ ヒ ビ ピ ミ リ ヰ ィ
+.L03 ウ ク グ ス ズ ツ ヅ ヌ フ ブ プ ム ユ ル ゥ ュ
+.L04 エ ケ ゲ セ ぜ テ デ ネ ヘ ベ ペ メ レ ヱ ェ
+.L05 オ コ ゴ ソ ゾ ト ド ノ ホ ボ ポ モ ヨ ロ ヲ ォ ョ
+
+.L06 ア イ ウ エ オ
+.L07 カ キ ク ケ コ
+.L08 ガ ギ グ ゲ ゴ
+.L09 サ シ ス セ ソ
+.L10 ザ ジ ズ ぜ ゾ
+.L11 タ       テ ト
+.L12    チ ツ
+.L13 ダ       デ ド
+.L14    ヅ ヅ
+.L15 ナ ニ ヌ ネ ノ
+.L16 ハ ヒ    ヘ ホ
+.L17       フ
+.L18 バ ビ ブ ベ ボ
+.L19 パ ピ プ ペ ポ
+.L20 マ ミ ム メ モ
+.L21 ヤ    ユ    ヨ
+.L22 ラ リ ル レ ロ
+.L23 ワ          ヲ
+
+.replace
+// full-width hiragana
+ あ ア
+ い イ
+ う ウ
+ え エ
+ お オ
+ か カ
+ き キ
+ く ク
+ け ケ
+ こ コ
+ が ガ
+ ぎ ギ
+ ぐ グ
+ げ ゲ
+ ご ゴ
+ さ サ
+ し シ
+ す ス
+ せ セ
+ そ ソ
+ ざ ザ
+ じ ジ
+ ず ズ
+ ぜ ゼ
+ ぞ ゾ
+ た タ
+ ち チ
+ つ ツ
+ て テ
+ と ト
+ だ ダ
+ ぢ ヂ
+ づ ヅ
+ で デ
+ ど ド
+ な ナ
+ に ニ
+ ぬ ヌ
+ ね ネ
+ の ノ
+ は ハ
+ ひ ヒ
+ ふ フ
+ へ ヘ
+ ほ ホ
+ ば バ
+ び ビ
+ ぶ ブ
+ べ ベ
+ ぼ ボ
+ ぱ パ
+ ぴ ピ
+ ぷ プ
+ ぺ ペ
+ ぽ ポ
+ ま マ
+ み ミ
+ む ム
+ め メ
+ も モ
+ や ヤ
+ ゆ ユ
+ よ ヨ
+ ら ラ
+ り リ
+ る ル
+ れ レ
+ ろ ロ
+ わ ワ
+ ゐ ヰ
+ を ヲ
+ ゑ ヱ
+ ん ン
+
+ ぁ ァ
+ ぃ ィ
+ ぅ ゥ
+ ぇ ェ
+ ぉ ォ
+ っ ッ
+ ゃ ャ
+ ゅ ュ
+ ょ ョ
+
+// half-width hiragana
+// TODO
+// half-width katakana
+// TODO
+
+.group ア
+       ア      a
+
+.group イ
+       イ      i
+       イェ    je
+
+.group ウ
+       ウ      u
+       ウェ    we
+
+.group ヴ
+       ヴ      vu
+       ヴァ    va
+       ヴィ    vi
+       ヴェ    ve
+       ヴォ    vo
+
+.group エ
+       エ      e
+
+.group オ
+       オ      o
+
+.group カ
+       カ      ka
+
+.group キ
+       キ      ki
+       キャ    kja
+       キュ    kju
+       キョ    kjo
+
+.group ク
+       ク      ku
+
+.group ケ
+       ケ      ke
+
+.group コ
+       コ      ko
+
+.group ガ
+       ガ      ga
+
+.group ギ
+       ギ      gi
+       ギャ    gja
+       ギュ    gju
+       ギョ    gjo
+
+.group グ
+       グ      gu
+
+.group ゲ
+       ゲ      ge
+
+.group ゴ
+       ゴ      go
+
+.group サ
+       サ      sa
+
+.group シ
+       シ      si
+       シャ    sja
+       シュ    sju
+       ショ    sjo
+
+.group ス
+       ス      su
+
+.group セ
+       セ      se
+
+.group ソ
+       ソ      so
+
+.group ザ
+       ザ      za
+
+.group ジ
+       ジ      zi
+       ジャ    zja
+       ジュ    zju
+       ジョ    zjo
+
+.group ズ
+       ズ      zu
+
+.group ゼ
+       ゼ      ze
+
+.group ゾ
+       ゾ      zo
+
+.group タ
+       タ      ta
+
+.group チ
+       チ      tsi
+       チャ    tsja
+       チュ    tsju
+       チョ    tsjo
+
+.group ツ
+       ツ      tsu
+
+.group テ
+       テ      te
+       ティ    ti
+
+.group ト
+       ト      to
+
+.group ダ
+       ダ      da
+
+.group ヂ
+       ヂ      dz\i
+       ヂャ    dz\ja
+       ヂュ    dz\ju
+       ヂョ    dz\jo
+
+.group ヅ
+       ヅ      dzu
+
+.group デ
+       デ      de
+       ディ    di
+
+.group ド
+       ド      do
+
+.group ナ
+       ナ      na
+
+.group ニ
+       ニ      ni
+       ニャ    dz\ja
+       ニュ    dz\ju
+       ニョ    dz\jo
+
+.group ヌ
+       ヌ      nu
+
+.group ネ
+       ネ      ne
+
+.group ノ
+       ノ      no
+
+.group ハ
+       ハ      ha
+       ハ (_   wa
+
+.group ヒ
+       ヒ      Ci
+       ヒャ    Cja
+       ヒュ    Cju
+       ヒョ    Cjo
+
+.group フ
+       フ      fu
+
+.group ヘ
+       ヘ      he
+
+.group バ
+       バ      ba
+
+.group ビ
+       ビ      bi
+       ビャ    bja
+       ビュ    bju
+       ビョ    bjo
+
+.group ブ
+       ブ      bu
+
+.group ベ
+       ベ      be
+
+.group ボ
+       ボ      bo
+
+.group パ
+       パ      pa
+
+.group ピ
+       ピ      pi
+       ピャ    pja
+       ピュ    pju
+       ピョ    pjo
+
+.group プ
+       プ      pu
+
+.group ペ
+       ペ      pe
+
+.group ポ
+       ポ      po
+
+.group マ
+       マ      ma
+
+.group ミ
+       ミ      mi
+       ミャ    mja
+       ミュ    mju
+       ミョ    mjo
+
+.group ム
+       ム      mu
+
+.group メ
+       メ      me
+
+.group モ
+       モ      mo
+
+.group ヤ
+       ヤ      ja
+
+.group ユ
+       ユ      ju
+
+.group ヨ
+       ヨ      jo
+
+.group ラ
+       ラ      ra
+
+.group リ
+       リ      ri
+       リャ    rja
+       リュ    rju
+       リョ    rjo
+
+.group ル
+       ル      ru
+
+.group レ
+       レ      re
+
+.group ロ
+       ロ      ro
+
+.group ワ
+       ワ      wa
+
+.group ヰ
+       ヰ      i
+
+.group ヲ
+       ヲ      wo
+
+.group ン
+       ン      N
+
+.group ッ
+       ッ (L07 k
+       ッ (L08 g
+       ッ (L09 s
+       ッ (L10 z
+       ッ (L11 t
+       ッ (L12 ts
+       ッ (L13 d
+       ッ (L14 dz
+       ッ (L15 n
+       ッ (L16 h
+       ッ (L17 f
+       ッ (L18 b
+       ッ (L19 p
+       ッ (L20 m
+       ッ (L21 j // ??
+       ッ (L22 r
+       ッ (L23 w // ??
+
+.group ー
+  L01) ー      a
+  L02) ー      i
+  L03) ー      u
+  L04) ー      e
+  L05) ー      o
+
+.group
+       .
+       ː
+
