@@ -60,4 +60,3 @@ src/speakGenerator.js: src/speak.js
 
 clean:
 	rm src/data.js src/pre.js src/post.js src/speak.bc src/speak.js src/speakGenerator.js src/speak.debug.js src/speakGenerator.debug.js
-
