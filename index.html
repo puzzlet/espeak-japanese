@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>eSpeak日本語デモ</title>
+  <script>
+    // This demo is licensed under the GNU GPL.
+  </script>
+  <script src="speakClient.js"></script>
+</head>
+<body>
+  <h1>eSpeak日本語デモ</h1>
+  <form onsubmit="speak(text.value, { amplitude: amplitude.value, wordgap: workdgap.value, pitch: pitch.value, speed: speed.value }); return false">
+    Text: <input type="text" name="text" size=50 value="かんじ は よみません。">
+    Amplitude: <input type="text" name="amplitude" size=5 value="100">
+    Pitch: <input type="text" name="pitch" size=5 value="50">
+    Speed: <input type="text" name="speed" size=5 value="175">
+    Word gap: <input type="text" name="workdgap" size=5 value="0">
+    <input type="submit" value="Go!">
+  </form>
+  <hr>
+  <p><a href="https://github.com/puzzlet/espeak-korean">GitHubページへ</a></p>
+
+  <div id="audio"></div>
+</body>
+</html>
+
