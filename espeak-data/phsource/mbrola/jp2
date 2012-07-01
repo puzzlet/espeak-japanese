@@ -1,0 +1,31 @@
+
+8 s   i    0 S
+8 h   i    0 C
+8 z   i    0 Z
+8 ts  u    0 ts
+8 ts  i    0 tS
+8 dz  u    0 dz
+8 dz  i    0 dZ
+
+8 n   i    0 nl
+9 g   N    0 G
+8 N   p    0 m:
+8 N   b    0 m:
+8 N   m    0 m:
+8 N   t    0 n:
+8 N   d    0 n:
+8 N   r    0 n:
+8 N   n    0 nl:
+8 N   k    0 G:
+8 N   g    0 G:
+0 N   NULL 0 N:
+
+8 t   t    0 Q
+8 p   p    0 Q
+8 k   k    0 Q
+8 s   s    0 Q
+8 ts  ts   0 Q
+8 d   d    0 Q
+
+// TODO: long vowels
+

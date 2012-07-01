@@ -1,9 +1,14 @@
+DATADIR=/usr/share/espeak-data
+
 all: espeak-data/en_dict espeak-data/ja_dict
 
 espeak-data/phontab: espeak-data/phsource/ph_japanese espeak-data/phsource/phonemes.append espeak-data/voices/ja espeak-data/voices/mb/mb-jp1
 	rsync -aCv espeak/espeak-data/ ${HOME}/espeak-data/
 	rsync -aCv espeak/phsource/ ${HOME}/espeak-data/phsource/
 	cp espeak-data/phsource/ph_japanese ${HOME}/espeak-data/phsource/
+	cp espeak-data/phsource/mbrola/jp1 ${HOME}/espeak-data/phsource/mbrola/
+	cp espeak-data/phsource/mbrola/jp2 ${HOME}/espeak-data/phsource/mbrola/
+	cp espeak-data/phsource/mbrola/jp3 ${HOME}/espeak-data/phsource/mbrola/
 	cp espeak-data/voices/ja ${HOME}/espeak-data/voices/
 	cp espeak-data/voices/mb/mb-jp1 ${HOME}/espeak-data/voices/mb/
 	cp espeak-data/voices/mb/mb-jp2 ${HOME}/espeak-data/voices/mb/
@@ -37,8 +42,10 @@ espeak-data/ja_dict: espeak-data/phontab espeak-data/dictsource/ja_list espeak-d
 speak:
 	espeak -v ja -X --path=. '我々 は 宇宙人 だ'
 
+install:
+	cp -prf espeak-data/* $(DATADIR)
+
 clean:
 	rm -R espeak-data/phontab espeak-data/phonindex espeak-data/phondata
 	rm -R espeak-data/en_dict espeak-data/ja_dict
-	rm espeak-data/dictsource/ja_list
 
